@@ -11,18 +11,24 @@ package com.theironyard;
 public class Main {
 
     public static void main(String[] args) {
-
+        double length = 60;
         /*
             Use the Converter.convert method at least 3 times using at least 6
             different units.
          */
+        Unit from = Unit.CENTIMETER;
+        Unit to =  Unit.FOOT;
+
         // todo: convert something
 
+        Converter.convert(60, Unit.METER , Unit.MILE);
 
         // todo: convert something else
-
+        Converter.convert(70, Unit.MILLIMETER, Unit.YARD);
 
         // todo: convert yet another thing
+        Converter.convert(567, Unit.FOOT, Unit.KILOMETER);
+
 
 
     }
